@@ -16,8 +16,8 @@ em tarefas mais simples e claras.
  */
 
 //Função
-
-function chunks(num){ // função chunks mais (num) parametro
+/*
+function recursivo(num){ // função recursivo mais (num) parametro
     //caso receba 0 ou String vazia não retorna nada.
     if (num === 0){
         return '';
@@ -25,21 +25,27 @@ function chunks(num){ // função chunks mais (num) parametro
 
     //caso receba 1
     if (num === 1){
-        return 'chunks'
+        return 'Recursivo'
     }else{ //caso receba mais de 1 como ja existe um chunks,add -1 no parametro e chunks"-".
-        return 'chunks-' + chunks(num -1)
+        return 'Recursivo - ' + recursivo(num -1)
     }
 
 }
+*/
 
-// Refatorando
+// Refatorando com eperador ternário reduz o if.
+
+function recursivo(num) {
+    if(num ===0) return ""
+    return num ===1 ? "Recursivo" : "Recursivo - " + recursivo(num - 1)
+}
 
 
-// Teste da Função
+// Teste da recursivo
 
-console.log(chunks(4));
-console.log(chunks(1));
-console.log(chunks(8));
-console.log(chunks(2));
+console.log(recursivo(4));
+console.log(recursivo(1));
+console.log(recursivo(8));
+console.log(recursivo(2));
 
 
