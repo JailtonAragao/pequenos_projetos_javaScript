@@ -33,17 +33,17 @@ function quadrado(numero) {
 
 // Fatorando com split('') e map('')
 
-function square(num){
+function quadrado(numero){
 
-    const digitoArray = num.toString().split('') //
-    const quadradoArray = digitoArray.map(digito => Number(digito) ** 2).join('') //
-
-    return Number(quadradoArray)
+    const digitoArray = numero.toString().split('') // O split separa a String em array.
+    const quadradoArray = digitoArray.map(digito => Number(digito) ** 2).join('') //Com map pode Criar um novo Array do anterior
+                                                                                  // map recebi uma callback
+    return Number(quadradoArray) //Convertendo em number                          // join('') juntar
 }
 
 // Teste da função convert String X Number
 
-console.log(square(3514)); 
-console.log(square(94571));
-console.log(square(24)); 
-console.log(square(3514)); 
+console.log(quadrado(3514)); 
+console.log(quadrado(94571));
+console.log(quadrado(24)); 
+console.log(quadrado(3514)); 
