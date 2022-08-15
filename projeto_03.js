@@ -19,7 +19,8 @@ function arrayInvertido(array) {
 
     for (let i = 0; i < array.length; i++) [ // usuando com i = 0, com i pecorrendo o array parando quando ficar menor que o comprimento, endrementado apartir de zero.
 
-        arrayCopia[i] = array[array.length - 1 -i] //arrayCopia recebe do array.length - 1 - i os arrays invertido.
+        arrayCopia[i] = array[array.length - 1 -i] //arrayCopia recebe do array.length - 1 - i os arrays invertido.git status
+        
 
     ]
 
